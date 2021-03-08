@@ -1,0 +1,23 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: folder
+packageMetadata:
+  shortDescription: sample description
+openAPI:
+  definitions:
+    io.k8s.cli.setters.orgID:
+      x-k8s-cli:
+        setter:
+          name: orgID
+          value: GCP_ORG_ID
+    io.k8s.cli.setters.folderDisplayName:
+      x-k8s-cli:
+        setter:
+          name: folderDisplayName
+          value: FOLDER_DISPLAY_NAME
+    io.k8s.cli.setters.parentFolderID:
+      x-k8s-cli:
+        setter:
+          name: parentFolderID
+          value: PARENT_FOLDER_ID
